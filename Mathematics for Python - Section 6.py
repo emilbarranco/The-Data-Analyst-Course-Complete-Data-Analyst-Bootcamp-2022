@@ -172,8 +172,78 @@ s_array.shape
 # A Tensor (k x m x n) is a collection of matrices.
 
 
-# In[ ]:
+# In[29]:
+
+
+m1 = np.array([[5, 12, 6], [-3, 0, 14]])
+m1
+
+
+# In[30]:
+
+
+m2 = np.array([[9, 8, 7], [1, 3, -5]])
+m2
+
+
+# In[32]:
 
 
 # Creating a Tensor out of 2 matrices.
 
+tensor1 = np.array([m1, m2])
+tensor1
+
+
+# In[33]:
+
+
+# Checking its shape
+
+tensor1.shape # 3 matrices, 2 rows x 3 columns each
+
+
+# In[35]:
+
+
+# Manually creating a tensor
+t_manual = np.array([[[5, 12, 6], [-3, 0, 14]], [[9, 8, 7], [1, 3, -5]]])
+t_manual
+
+
+# In[36]:
+
+
+# Adding and Substracting Matrices
+
+# 1 condition: The two matrices must have the same dimensions.
+
+m1 + m2
+
+
+# In[37]:
+
+
+m1 - m2
+
+
+# In[40]:
+
+
+# Adding and Substracting Vectors
+
+# 1 condition: The two matrices must have the same dimensions.
+
+v1 =  np.array([1, 2, 3, 4, 5])
+v2 =  np.array([5, 4, 3, 2, 1])
+
+v1 + v2
+
+
+# In[41]:
+
+
+v1 - v2
+
+
+# In[ ]:
